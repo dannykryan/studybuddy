@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: #1B1E24;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+nav {
+    background-color: #121418;
+    height: 100px;
+}
+
+main {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.1rem;
+    box-sizing: border-box;
+}
+
+#welcome-box {
+    padding: 0  4rem 0 1.1rem;
+    margin-bottom: 1.8rem;
+}
+
+#welcome-box h1 {
+    font-size:  1rem;
+}
+
+#welcome-box p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .btn-container {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    height: 100px;
+} */
+
+.btn-text-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-container img {
+    height: 75px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    padding: 1.1rem 8rem 1.1rem 1.1rem;
+    border-radius: 1.25rem;
+    margin: 0 0 2rem 0;
+}
+
+.btn-header {
+    color: black;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.btn-description {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.resource-btn {
+    background-color: white;
+}
+
+.open-bar-btn {
+    background-color: #00C39A;
+}
+
+.front-end-btn {
+    background-color: #C89AFF;
+}
+
+.back-end-btn {
+    background-color: #50A2FF;
+}
+
+.ui-ux-btn {
+    background-color: #FCC699;
+}
