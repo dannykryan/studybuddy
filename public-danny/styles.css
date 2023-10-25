@@ -109,3 +109,9 @@ a {
 .resource-header {
     font-size: 2rem;
 }
+
+.owner-text {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500 ;
+}
