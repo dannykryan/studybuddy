@@ -105,3 +105,7 @@ a {
 .ui-ux-btn {
     background-color: #FCC699;
 }
+
+.resource-header {
+    font-size: 2rem;
+}
