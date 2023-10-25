@@ -16,7 +16,7 @@ nav {
 }
 
 #logo {
-    height: 80px;
+    height: 60px;
 }
 
 #user-info {
@@ -28,8 +28,8 @@ nav {
 #profile-pic {
     border-radius: 100%;
     background-color: #00C39A;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
