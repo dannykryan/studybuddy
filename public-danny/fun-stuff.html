@@ -8,9 +8,25 @@
     <title>Study Buddy App</title>
 </head>
 <body>
+<<<<<<< HEAD
     <nav></nav>
     <main>
         <div id="welcome-box">
+=======
+    <nav>
+        <a href="index.html"><img id="logo" src="../assets/images/study-buddy-logo-2.png" alt="study buddy logo"></a>
+        <div id="user-info">
+            <p id="username">User_777</p>
+            <div id="profile-pic">U</div>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="resource-box">
+            <div class="back-link-box">
+                <a href="resource-library.html">❮ Back</a>
+            </div>
+            <img class="resource-header-image" src="../assets/images/Music.png" alt="resources main image">
+>>>>>>> f600b80ee7caad837dc93bf5b905ac664c77bb63
             <h1 class="resource-header">FUN STUFF</h1>
             <p>Below you will find some open study rooms where you can find new study buddies. Or, if you want to find some resources to supplement your learning, check our the Resource Library</p>
         </div>
@@ -72,7 +88,18 @@
                     </a>
                 </li>
             </ul>
+            <div class="file" onclick="files()"></div>
     </main>
+    <form id="newRes">
+        <label for="title">Title</label>
+        <input id="title" type="text" placeholder="enter title">
+        <label for="description">Description</label>
+        <textarea id="description" name="w3review" rows="4" cols="50" placeholder="Enter description here"></textarea>
+        <label for="url">URL</label>
+        <input id="url" type="text" placeholder="enter url">
+        <button type="submit">Submit</button>
+    </form>
     <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>
