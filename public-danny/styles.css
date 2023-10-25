@@ -8,6 +8,34 @@ body {
 nav {
     background-color: #121418;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+
+#logo {
+    height: 80px;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-pic {
+    border-radius: 100%;
+    background-color: #00C39A;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.8rem;
 }
 
 main {
