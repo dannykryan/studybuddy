@@ -160,3 +160,12 @@ a {
 .resource-header-image {
     height: 150px;
 }
+
+.back-link-box {
+    margin-right: auto;
+    text-align: left;
+}
+
+.back-link-box a {
+    color: white;
+}
