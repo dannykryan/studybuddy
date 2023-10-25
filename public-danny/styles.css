@@ -94,6 +94,10 @@ a {
     min-width: 75px;
 }
 
+.img-box img {
+    height: 100px;
+}
+
 .btn {
     display: flex;
     height: 100%;
