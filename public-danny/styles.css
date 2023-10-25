@@ -177,11 +177,11 @@ a {
     top:90%;
     left: 80%;
     height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  transition-duration: 1s;
-  background-image: url('/assets/images/Plus.png');
-  background-size: contain;
+    width: 50px;
+    border-radius: 50%;
+    transition-duration: 1s;
+    background-image: url('/assets/images/Plus.png');
+    background-size: contain;
 }
 
 .rotate{
@@ -190,7 +190,7 @@ a {
 
 
 form{
-    opacity: 0;
+    visibility: hidden;
     top:30%;
     left:10%;
     position:fixed;
@@ -204,11 +204,10 @@ form{
     padding: 15px;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     gap: 5px;
-    transition: 1s;
 }
 
 .formShow{
-    opacity: 100%;
+    visibility: visible;
 }
 #main{
     transition: opacity 1s;
