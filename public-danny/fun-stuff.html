@@ -18,7 +18,7 @@
     <main id="main">
         <div id="resource-box">
             <div class="back-link-box">
-                <a href="resource-library.html">❮ Back</a>
+                <a href="resource-library.html" class="body-link">❮ Back</a>
             </div>
             <img class="resource-header-image" src="../assets/images/Music.png" alt="resources main image">
             <h1 class="resource-header">FUN STUFF</h1>
@@ -26,7 +26,7 @@
         </div>
             <ul>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=Djz6sfWGmgM">
+                    <a href="https://www.youtube.com/watch?v=Djz6sfWGmgM" class="body-link">
                         <div class="open-bar-btn btn">
                             <div class="btn-text-container">
                                 <div class="btn-header">MY FAVOURITE STUDY TUNES</div>
@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://cssbattle.dev/">
+                    <a href="https://cssbattle.dev/" class="body-link">
                         <div class="back-end-btn btn">
                             <div class="btn-text-container">
                                 <div class="btn-header">CSS BATTLE: Where Pixels and Pizzazz Collide!</div>
@@ -54,7 +54,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.laughfactory.com/jokes">
+                    <a href="https://www.laughfactory.com/jokes" class="body-link">
                         <div class="front-end-btn btn">
                             <div class="btn-text-container">
                                 <div class="btn-header">JOKE OF THE DAY</div>
@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://mytuner-radio.com/radio/country/united-kingdom/genre/comedy-stations">
+                    <a href="https://mytuner-radio.com/radio/country/united-kingdom/genre/comedy-stations" class="body-link">
                         <div class="ui-ux-btn btn">
                             <div class="btn-text-container">
                                  <div class="btn-header">RADIO RASCALS</div>
@@ -82,17 +82,23 @@
                     </a>
                 </li>
             </ul>
-            <div class="file" onclick="files()"></div>
+            <div class="submit-resource-button body-link" onclick="files()"></div>
     </main>
-    <form id="newRes">
-        <label for="title">Title</label>
-        <input id="title" type="text" placeholder="enter title">
-        <label for="description">Description</label>
-        <textarea id="description" name="w3review" rows="4" cols="50" placeholder="Enter description here"></textarea>
-        <label for="url">URL</label>
-        <input id="url" type="text" placeholder="enter url">
-        <button type="submit">Submit</button>
-    </form>
+    <div class="form-container">
+        <form id="newRes">
+            <h2>SUBMIT A RESOURCE</h2>
+            <label for="title">Title:</label>
+            <input id="title" type="text" placeholder="Enter a title title...">
+            <label for="link">Link:</label>
+            <input id="link" type="text" placeholder="Provide a link to your resource...">
+            <label for="image-url">Image URL:</label>
+            <input id="image-url" type="text" placeholder="Add an accompanying image...">
+            <label for="description">Description:</label>
+            <textarea id="description" name="w3review" rows="4" cols="50" placeholder="Enter a brief description..."></textarea>
+            <button id="form-cancel-button" type="button" onclick="files()">Cancel</button>
+            <button id="form-submit-button" type="submit">Submit</button>
+        </form>
+    </div>
     <footer></footer>
     <script src="main.js"></script>
 </body>
