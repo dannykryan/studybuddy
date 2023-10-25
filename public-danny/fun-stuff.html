@@ -15,7 +15,7 @@
             <div id="profile-pic">U</div>
         </div>
     </nav>
-    <main>
+    <main id="main">
         <div id="resource-box">
             <div class="back-link-box">
                 <a href="resource-library.html">❮ Back</a>
@@ -82,7 +82,18 @@
                     </a>
                 </li>
             </ul>
+            <div class="file" onclick="files()"></div>
     </main>
+    <form id="newRes">
+        <label for="title">Title</label>
+        <input id="title" type="text" placeholder="enter title">
+        <label for="description">Description</label>
+        <textarea id="description" name="w3review" rows="4" cols="50" placeholder="Enter description here"></textarea>
+        <label for="url">URL</label>
+        <input id="url" type="text" placeholder="enter url">
+        <button type="submit">Submit</button>
+    </form>
     <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>

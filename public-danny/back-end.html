@@ -15,7 +15,7 @@
             <div id="profile-pic">U</div>
         </div>
     </nav>
-    <main>
+    <main id="main">
         <div id="welcome-box">
             <h1 class="resource-header">BACK END RESOURCES</h1>
             <p>Below you will find some open study rooms where you can find new study buddies. Or, if you want to find some resources to supplement your learning, check our the Resource Library</p>
@@ -78,7 +78,18 @@
                     </a>
                 </li>
             </ul>
+        <div class="file" onclick="files()"></div>
     </main>
+    <form id="newRes">
+        <label for="title">Title</label>
+        <input id="title" type="text" placeholder="enter title">
+        <label for="description">Description</label>
+        <textarea id="description" name="w3review" rows="4" cols="50" placeholder="Enter description here"></textarea>
+        <label for="url">URL</label>
+        <input id="url" type="text" placeholder="enter url">
+        <button type="submit">Submit</button>
+    </form>
     <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>
