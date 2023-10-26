@@ -3,10 +3,8 @@
 const loginForm = document.getElementById("logInData");
 const continueBtn = document.querySelector(".popUp");
 
-export const userName = null
 
 loginForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
   let resource = { username: e.target[0].value, password: e.target[1].value };
   //turn into JSON object
   let JSONdata = JSON.stringify(resource);
@@ -53,7 +51,6 @@ function register() {
 //API request to add new user
 
 registerForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
   let resource = {
     name: e.target[0].value,
     email: e.target[1].value,
