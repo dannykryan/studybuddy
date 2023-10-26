@@ -5,7 +5,7 @@ const continueBtn = document.querySelector(".popUp");
 
 loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
-  let resource = { name: e.target[0].value, password: e.target[1].value };
+  let resource = { username: e.target[0].value, password: e.target[1].value };
   //turn into JSON object
   let JSONdata = JSON.stringify(resource);
   //console.log(resource)
