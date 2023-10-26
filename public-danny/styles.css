@@ -471,3 +471,32 @@ visibility: hidden;
     height: 28px;
    align-self: center;
 }
+
+#front-end-rating {
+    color: #FCC699;
+}
+
+#back-end-rating {
+    color: #50A2FF;
+}
+
+#uiux-rating {
+    color: #C89AFF;
+}
+
+.star-container {
+    font-size: 24px;
+}
+
+.empty-star {
+    font-size: 24px;
+    color: #636770;
+}
+
+#profile-pic {
+    background-image: url("https://avatars.githubusercontent.com/u/111202444?s=400&u=ebca7a551e0032f27977d34362fe4cb267e3e857&v=4");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
