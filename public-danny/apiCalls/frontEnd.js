@@ -14,7 +14,7 @@ async function populate() {
       console.log(resource.imglink);
       let colour = addColour(resource.id);
       return ` <li>
-        <a href="/${resource.link}">
+        <a href="${resource.link}" target="_blank">
             <div class="${colour} btn">
                 <div class="btn-text-container">
                     <div class="btn-header">${resource.title}</div>
