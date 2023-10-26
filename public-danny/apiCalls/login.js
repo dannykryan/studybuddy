@@ -23,6 +23,9 @@ loginForm.addEventListener("submit", async (e) => {
     console.log("hello");
     document.getElementById("notFound").classList.toggle("notFound");
   } else {
+    localStorage.setItem('name', `${data.data.name}`)
+    console.log(data.data.imglink)
+    localStorage.setItem('img', `${data.data.imglink}`)
     continueBtn.innerHTML = `
         <div class="continue">
         <h2>Welcome ${data.data.name}!</h2>
@@ -58,6 +61,7 @@ registerForm.addEventListener("submit", async (e) => {
     email: e.target[1].value,
     username: e.target[2].value,
     password: e.target[3].value,
+    imglink: e.target[4].value
   };
   //turn into JSON object
   console.log(resource);
