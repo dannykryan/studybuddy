@@ -266,3 +266,78 @@ form input {
 #form-submit-button:hover {
     background-color: #625291;
 }
+
+
+/* PROFILE PAGE */
+
+#profile-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#user-basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #343842;
+    border-radius: 0 0 18px 18px;
+    opacity: 65%;
+    padding: 1.1rem 1.1rem 1.1rem 1.1rem;
+}
+
+#user-basic-info h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+#user-basic-info a {
+    color: #00C39A;
+}
+
+#user-basic-info p {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    font-weight: 300;
+}
+
+#profile-pic-large {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("https://64.media.tumblr.com/13693e391255ed28f395b582d9a853e4/a18c473c822fed06-7e/s640x960/ff85affc1e1ee9c07863a5d2b6041a99e1bffd77.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width:  450px;
+    border-radius: 20px;
+}
+
+#user-infobox-header {
+    margin-top: 2.2rem;
+    font-weight: 500;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    font-weight: 200;
+    margin-bottom: 0.8rem;;
+}
+
+.star-container {
+    margin-left: 1.1rem;
+}
+
+#username-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#github-icon {
+    height: 30px;
+    margin-left: 1.1rem;
+}

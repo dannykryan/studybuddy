@@ -1,0 +1,9 @@
+Morning until Break at 10:30
+
+
+TASKS
+Collect image links to populate resource data
+Functioning user table
+Update resource image to use a div and CSS property 'background-image'
+
+create user page
