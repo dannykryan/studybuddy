@@ -273,16 +273,15 @@ form input {
 #profile-info-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 #user-basic-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #343842;
+    align-items: center;
+    background-color: rgba(52, 56, 66, 0.7);
     border-radius: 0 0 18px 18px;
-    opacity: 65%;
     padding: 1.1rem 1.1rem 1.1rem 1.1rem;
 }
 
@@ -306,25 +305,33 @@ form input {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("https://64.media.tumblr.com/13693e391255ed28f395b582d9a853e4/a18c473c822fed06-7e/s640x960/ff85affc1e1ee9c07863a5d2b6041a99e1bffd77.jpg");
+    background-image: url("https://avatars.githubusercontent.com/u/111202444?s=400&u=ebca7a551e0032f27977d34362fe4cb267e3e857&v=4");
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
-    width:  450px;
+    height: 400px;
+    width:  350px;
     border-radius: 20px;
 }
 
 #user-infobox-header {
-    margin-top: 2.2rem;
+    font-size: 20px;
+    margin-top: 1.4rem;
+    margin-bottom: 0.8rem;
     font-weight: 500;
+}
+
+#user-infobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rating-container {
     display: flex;
     flex-direction: row;
-    font-weight: 200;
-    margin-bottom: 0.8rem;;
+    align-items: center;
+    font-weight: 500;
 }
 
 .star-container {
@@ -339,5 +346,5 @@ form input {
 
 #github-icon {
     height: 30px;
-    margin-left: 1.1rem;
+    margin-top: 1.1rem;
 }
