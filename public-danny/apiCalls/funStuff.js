@@ -19,7 +19,7 @@ async function populate(){
                     <p class="owner-text">Submitted by: <span class="resource-owner">${resource.category}</span></p>
                 </div>
                 <div class="img-box">
-                    <img src="https://${resource.imglink}" alt="resource-image">
+                    <img src="${resource.imglink}" alt="resource-image">
                 </div>
             </div>
         </a>

@@ -1,5 +1,5 @@
-
 //login attempt
+//export const userName = ''
 const loginForm = document.getElementById("logInData")
 const continueBtn = document.querySelector(".popUp")
 
@@ -30,6 +30,7 @@ loginForm.addEventListener("submit", async (e) =>{
         <button type="button" onclick="window.location.href = 'www.google.com';" >continue</button>
         <div>
         `
+       userName = data.data.name
       }
 } )
 
