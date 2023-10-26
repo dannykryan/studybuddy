@@ -306,8 +306,7 @@ form input {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("https://avatars.githubusercontent.com/u/111202444?s=400&u=ebca7a551e0032f27977d34362fe4cb267e3e857&v=4");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;

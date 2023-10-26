@@ -24,7 +24,7 @@ loginForm.addEventListener("submit", async (e) => {
     document.getElementById("notFound").classList.toggle("notFound");
   } else {
     localStorage.setItem('name', `${data.data.name}`)
-    console.log(data.data.imglink)
+    localStorage.setItem('id', `${data.data.id}`)
     localStorage.setItem('img', `${data.data.imglink}`)
     continueBtn.innerHTML = `
         <div class="continue">

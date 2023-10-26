@@ -48,9 +48,9 @@ return colours[0]
 //default behaviour for submit is to refresh page - so resources automatically update.
 form.addEventListener("submit", async (e) => {
     //get values from Form data and save in js object
-    
+
     let resource = {title: e.target[0].value, description: e.target[3].value, link: e.target[1].value, imglink: e.target[2].value, category: 'UX design'}
-    //turn into JSON object 
+    //turn into JSON object
     console.log(resource)
     let JSONdata = JSON.stringify(resource)
     //post new resource to the database
