@@ -45,9 +45,9 @@ nav {
     gap: 5px;
 }
 
-#logInData label {
+#logInData input {
     font-size: 12px;
-    margin-top: 0.5rem;
+    text-align: center;
 }
 
 #login input{
