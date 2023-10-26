@@ -1,3 +1,4 @@
+import { userName } from "./apiCalls/login";
 
 const resourceBtn = document.querySelector(".submit-resource-button");
 const form = document.getElementById("newRes");

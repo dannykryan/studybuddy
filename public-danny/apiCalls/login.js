@@ -3,6 +3,8 @@
 const loginForm = document.getElementById("logInData");
 const continueBtn = document.querySelector(".popUp");
 
+export const userName = null
+
 loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   let resource = { username: e.target[0].value, password: e.target[1].value };
@@ -25,7 +27,7 @@ loginForm.addEventListener("submit", async (e) => {
     continueBtn.innerHTML = `
         <div class="continue">
         <h2>Welcome ${data.data.name} !</h2>
-        <button type="button" onclick="window.location.href = 'www.google.com';" >continue</button>
+        <button type="button" onclick="window.location.href = 'index.html';" >continue</button>
         </div>
         `;
     userName = data.data.name;
