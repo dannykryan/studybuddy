@@ -3,7 +3,6 @@
 const loginForm = document.getElementById("logInData");
 const continueBtn = document.querySelector(".popUp");
 
-
 loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   let resource = { username: e.target[0].value, password: e.target[1].value };
@@ -21,13 +20,13 @@ loginForm.addEventListener("submit", async (e) => {
   let data = await response.json();
   console.log(data.status);
   if (data.status !== "success") {
-    console.log('hello')
+    console.log("hello");
     document.getElementById("notFound").classList.toggle("notFound");
   } else {
     continueBtn.innerHTML = `
         <div class="continue">
-        <h2>Welcome ${data.data.name} !</h2>
-        <button type="button" onclick="window.location.href = 'index.html';" >continue</button>
+        <h2>Welcome ${data.data.name}!</h2>
+        <button type="button" onclick="window.location.href = 'index.html';" >Continue</button>
         </div>
         `;
     userName = data.data.name;
