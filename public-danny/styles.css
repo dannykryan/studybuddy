@@ -196,7 +196,7 @@ a {
     transition: transform 1s, opacity 1s;
 }
 
-form{
+#newres{
     visibility: hidden;
     position:fixed;
     top: 10rem;
@@ -231,7 +231,7 @@ form{
     opacity: 20%;
 }
 
-form textarea, form input, form button {
+#newres textarea, #newres input, #newresrm button {
     font-family: "Inter", Arial, Helvetica, sans-serif;
     border-radius: 13px;
     padding: 0.8rem;
@@ -242,11 +242,11 @@ form textarea, form input, form button {
     font-size: 16px;
 }
 
-form textarea {
+#newres textarea {
     height: 50px;
 }
 
-form input {
+#newres input {
     height: 20px;
 }
 
