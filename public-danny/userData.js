@@ -9,3 +9,9 @@ document.getElementById("user-info").innerHTML = `<p id="username">${localName}<
 document.getElementById("userImage").innerHTML = `#profile-pic{
     background-image: url('${localImg}');
 }`
+
+//add functionality to logout button 
+
+function logOut(){
+    localStorage.clear()
+}

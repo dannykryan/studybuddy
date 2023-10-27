@@ -16,7 +16,13 @@ console.log("hello" + id)
       body: JSONdata, // body data type must match "Content-Type" header
     });
     let data = await response.json();
-    console.log(data.data);
+    console.log(data.data.username);
+    document.getElementById("user-basic-info").innerHTML = `
+    <h1 id="user-fullname">${data.data.name}</h1>
+    <p class="user-handle">${data.data.username}</p>
+    <a id="user-email" href="mailto:dannykryan@gmail.com">${data.data.email}</a>
+    `
+
 }
 
 ///////adding styling to user image
@@ -27,3 +33,4 @@ document.getElementById("userImage").innerHTML = `#profile-pic{
         background-image: url('${localImg}');
     }
 `
+
