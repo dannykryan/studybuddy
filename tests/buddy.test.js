@@ -2,11 +2,11 @@
 import { test, expect } from "playwright/test";
 
 test("Click add new", async ({ page }) => {
-  await page.goto("http://127.0.0.1:5501/public-danny/login.html"); //go to the login page
+  await page.goto("http://127.0.0.1:5501/public/login.html"); //go to the login page
   const username = page.getByLabel("Username");
   await username.click(); //select username
-  await username.fill("Dog"); //fill the input
-  await expect(username).toHaveValue("Dog"); //checking the value matches what we expect
+  await username.fill("Livi1996"); //fill the input
+  await expect(username).toHaveValue("Livi1996"); //checking the value matches what we expect
   const password = page.getByPlaceholder("Enter password");
   await password.click(); //select password
   await password.fill("123"); //fill the input
@@ -54,5 +54,4 @@ test("Click add new", async ({ page }) => {
     "You Suck At Accessibility (But You Don't Have To)"
   );
   await page.getByRole("button", { name: "Submit" }).click();
-  await page.goto("http://127.0.0.1:5501/public-danny/back-end.html");
 });
