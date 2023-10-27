@@ -44,6 +44,26 @@ function addColour(id) {
   return colours[0];
 }
 //////////////////////////////////////////////////////////////////////////////////
+
+//api call to get username for adding to new resource
+let userid = localStorage.getItem('id')
+let userNameAdd = null
+
+document.addEventListener("DOMContentLoaded", getUserId(userid));
+
+async function getUserId(id){
+    let resource = {id: id};
+    let JSONdata = JSON.stringify(resource);
+    let response = await fetch("http://localhost:7000/users/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata, // body data type must match "Content-Type" header
+    });
+    let data = await response.json();
+    userNameAdd = data.data.username
+}
 //API call to submit a new resource
 //function to submit new resources
 //default behaviour for submit is to refresh page - so resources automatically update.
@@ -55,7 +75,7 @@ form.addEventListener("submit", async (e) => {
     description: e.target[3].value,
     link: e.target[1].value,
     imglink: e.target[2].value,
-    category: "back end",
+    category: userNameAdd,
   };
   //turn into JSON object
   console.log(resource);
