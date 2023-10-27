@@ -500,3 +500,9 @@ visibility: hidden;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+footer {
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
