@@ -11,7 +11,7 @@ async function populate() {
   //reverses at the end to show the most recent link first
   document.getElementById("root").innerHTML = data
     .map((resource) => {
-      console.log(resource.imglink);
+      // console.log(resource.imglink);
       let colour = addColour(resource.id);
       return ` <li>
         <a href="${resource.link}" target="_blank">
@@ -47,25 +47,24 @@ function addColour(id) {
 }
 //////////////////////////////////////////////////////////////////////////////////
 //api call to get username for adding to new resource
-let userid = localStorage.getItem('id')
-let userNameAdd = null
+let userid = localStorage.getItem("id");
+let userNameAdd = null;
 
 document.addEventListener("DOMContentLoaded", getUserId(userid));
 
-async function getUserId(id){
-    let resource = {id: id};
-    let JSONdata = JSON.stringify(resource);
-    let response = await fetch("http://localhost:7000/users/user", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata, // body data type must match "Content-Type" header
-    });
-    let data = await response.json();
-    userNameAdd = data.data.username
+async function getUserId(id) {
+  let resource = { id: id };
+  let JSONdata = JSON.stringify(resource);
+  let response = await fetch("http://localhost:7000/users/user", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSONdata, // body data type must match "Content-Type" header
+  });
+  let data = await response.json();
+  userNameAdd = data.data.username;
 }
-
 
 //API call to submit a new resource
 //function to submit new resources
@@ -80,7 +79,7 @@ form.addEventListener("submit", async (e) => {
     category: userNameAdd,
   };
   //turn into JSON object
-  console.log(resource);
+  // console.log(resource);
   let JSONdata = JSON.stringify(resource);
   //post new resource to the database
   let response = await fetch("http://localhost:7000/frontend", {

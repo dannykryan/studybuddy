@@ -17,18 +17,18 @@ loginForm.addEventListener("submit", async (e) => {
     },
     body: JSONdata, // body data type must match "Content-Type" header
   });
-  let data = await response.json();
-  console.log(data.status);
-  if (data.status !== "success") {
-    console.log("hello");
+  let loginData = await response.json();
+  console.log(loginData.status);
+  if (loginData.status !== "success") {
+    console.log("There has been an error!");
     document.getElementById("notFound").classList.toggle("notFound");
   } else {
-    localStorage.setItem('name', `${data.data.name}`)
-    localStorage.setItem('id', `${data.data.id}`)
-    localStorage.setItem('img', `${data.data.imglink}`)
+    localStorage.setItem("username", `${loginData.data.username}`);
+    localStorage.setItem("id", `${loginData.data.id}`);
+    localStorage.setItem("img", `${loginData.data.imglink}`);
     continueBtn.innerHTML = `
         <div class="continue">
-        <h2>Welcome ${data.data.name}!</h2>
+        <h2>Welcome ${loginData.data.name}!</h2>
         <button type="button" onclick="window.location.href = 'index.html';" >Continue</button>
         </div>
         `;
@@ -61,7 +61,7 @@ registerForm.addEventListener("submit", async (e) => {
     email: e.target[1].value,
     username: e.target[2].value,
     password: e.target[3].value,
-    imglink: e.target[4].value
+    imglink: e.target[4].value,
   };
   //turn into JSON object
   console.log(resource);
