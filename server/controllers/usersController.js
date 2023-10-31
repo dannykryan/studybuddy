@@ -17,12 +17,10 @@ export async function getUserNamePassword(req, res) {
   } catch (error) {
     // Handle unexpected errors, e.g., database connection errors, server errors.
     console.error(error);
-    res
-      .status(500)
-      .json({
-        status: "error",
-        message: "An error occurred while fetching user data.",
-      });
+    res.status(500).json({
+      status: "error",
+      message: "An error occurred while fetching user data.",
+    });
   }
 }
 
@@ -38,11 +36,9 @@ export async function postUser(req, res) {
   } catch (error) {
     // Handle unexpected errors, e.g., database connection errors, server errors.
     console.error(error);
-    res
-      .status(500)
-      .json({
-        status: "error",
-        message: "An error occurred while creating a user.",
-      });
+    res.status(500).json({
+      status: "error",
+      message: "An error occurred while creating a user.",
+    });
   }
 }
