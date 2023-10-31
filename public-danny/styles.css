@@ -224,6 +224,7 @@ form{
 .formShow{
     visibility: visible;
 }
+
 #main{
     transition: opacity 1s;
 }
