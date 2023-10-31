@@ -506,3 +506,7 @@ footer {
     text-align: center;
     text-decoration: underline;
 }
+
+footer:hover {
+    cursor: pointer;
+}
