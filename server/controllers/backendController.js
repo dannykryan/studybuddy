@@ -8,7 +8,7 @@ import {
 export async function getBackendList(req, res) {
   try {
     const backendData = await getBackend();
-    res.status(200).send({ status: "success", data: backendData });
+    res.status(200).json({ status: "success", data: backendData });
     // console.log(backendData);
   } catch (error) {
     // Handle the error and send an appropriate response
