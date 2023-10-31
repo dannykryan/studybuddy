@@ -28,7 +28,7 @@ loginForm.addEventListener("submit", async (e) => {
     localStorage.setItem("img", `${loginData.data.imglink}`);
     continueBtn.innerHTML = `
         <div class="continue">
-        <h2>Welcome ${loginData.data.name}!</h2>
+        <h2>Welcome back, ${loginData.data.name.split(" ")[0]}!</h2>
         <button type="button" onclick="window.location.href = 'index.html';" >Continue</button>
         </div>
         `;
