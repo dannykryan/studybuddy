@@ -53,13 +53,13 @@ document.addEventListener("DOMContentLoaded", getUserId(userid));
 
 async function getUserId(id) {
   let resource = { id: id };
-  let JSONdata = JSON.stringify(resource);
+  let resourceJSON = JSON.stringify(resource);
   let response = await fetch("http://localhost:7000/users/user", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSONdata, // body data type must match "Content-Type" header
+    body: resourceJSON, // body data type must match "Content-Type" header
   });
   let data = await response.json();
   userNameAdd = data.data.username;

@@ -16,7 +16,7 @@ async function populate() {
                 <div class="btn-text-container">
                     <div class="btn-header">${resource.title}</div>
                     <div class="btn-description">${resource.description}</div>
-                    <p class="owner-text">Submitted by: <span class="resource-owner">${resource.category}</span></p>
+                    <p class="owner-text">Submitted by: <span class="resource-owner">${resource.owner}</span></p>
                 </div>
                 <div class="img-box">
                     <img src="${resource.imglink}" alt="resource-image">
@@ -42,12 +42,9 @@ function addColour(id) {
   }
   return colours[0];
 }
-//////////////////////////////////////////////////////////////////////////////////
 
 //api call to get username for adding to new resource
 let userid = localStorage.getItem("id");
-let localUsername = localStorage.getItem("username");
-console.log(localUsername);
 let userNameAdd = null;
 
 document.addEventListener("DOMContentLoaded", getUserId(userid));
@@ -70,6 +67,7 @@ async function getUserId(id) {
 //default behaviour for submit is to refresh page - so resources automatically update.
 form.addEventListener("submit", async (e) => {
   //get values from Form data and save in js object
+  let localUsername = localStorage.getItem("username");
   let resource = {
     title: e.target[0].value,
     link: e.target[1].value,
