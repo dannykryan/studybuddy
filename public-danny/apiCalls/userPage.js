@@ -1,3 +1,5 @@
+const baseURL = "https://study-buddy-9en0.onrender.com";
+
 //////////getting user information from the back end using user ID
 let userid = localStorage.getItem("id");
 

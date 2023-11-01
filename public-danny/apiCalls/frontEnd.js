@@ -1,5 +1,7 @@
 //////////////////////////////////FRONT END////////////////////////////////////////////////
 
+const baseURL = "https://study-buddy-9en0.onrender.com";
+
 //API call to get conent to populate front end page
 document.addEventListener("DOMContentLoaded", populate);
 async function populate() {

@@ -1,3 +1,5 @@
+const baseURL = "https://study-buddy-9en0.onrender.com";
+
 //////////////////////////////////FRONT END////////////////////////////////////////////////
 
 //API call to get conent to populate front end page
