@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", getUserId(userid));
 async function getUserId(id) {
   let resource = { id: id };
   let resourceJSON = JSON.stringify(resource);
-  let response = await fetch("${baseURL}/users/user", {
+  let response = await fetch(`${baseURL}/users/user`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
