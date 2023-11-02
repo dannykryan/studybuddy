@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cors());
 
 //express your routes and path
-app.use(express.static("../public"));
+app.use(express.static("./server/public"));
 app.use("/frontend", frontendRoute);
 app.use("/backend", backendRoute);
 app.use("/funstuff", funstuffRoute);
