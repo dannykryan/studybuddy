@@ -18,14 +18,14 @@ export async function getFrontend() {
 export async function createFrontend(frontend) {
   // Query the database to create an frontend and return the newly created frontend
   const queryText =
-    "INSERT INTO frontend (title, description, link, imglink, category) VALUES ($1, $2, $3, $4, $5) RETURNING *";
+    "INSERT INTO frontend (title, description, link, imglink, owner) VALUES ($1, $2, $3, $4, $5) RETURNING *";
   //define elements of the request and placeholder values
   const result = await pool.query(queryText, [
     frontend.title,
     frontend.description,
     frontend.link,
     frontend.imglink,
-    frontend.category,
+    frontend.owner,
   ]);
   //return result
   return result.rows[0] || null;

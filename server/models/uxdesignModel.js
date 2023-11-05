@@ -16,14 +16,14 @@ export async function getUxdesign() {
 export async function createUxdesign(uxdesign) {
   // Query the database to create an frontend and return the newly created uxdesign
   const queryText =
-    "INSERT INTO uxdesign (title, description, link, imglink, category) VALUES ($1, $2, $3, $4, $5) RETURNING *";
+    "INSERT INTO uxdesign (title, description, link, imglink, owner) VALUES ($1, $2, $3, $4, $5) RETURNING *";
   //define elements of the request and placeholder values
   const result = await pool.query(queryText, [
     uxdesign.title,
     uxdesign.description,
     uxdesign.link,
     uxdesign.imglink,
-    uxdesign.category,
+    uxdesign.owner,
   ]);
   //return result or null
   return result.rows[0] || null;
