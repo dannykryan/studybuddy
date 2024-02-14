@@ -4,9 +4,13 @@ Try Now: [StudyBuddy App](https://study-buddy-9en0.onrender.com/)
 
 ## Introduction
 
-StudyBuddy was created within one week as a half-term project at the School of Code software development bootcamp by a team of five junior software developers. At just 8 weeks into a sixteen-week course, the project was outlined with the following criteria:
+StudyBuddy was created within one week as a half-term project at the School of Code software development bootcamp by a team of five junior software developers. 
 
-### Overview
+The project was originally built as two separate [front-end](https://github.com/SchoolOfCode/bc15-w8-project-front-end-tech-gladiators) and [back-end](https://github.com/SchoolOfCode/bc15-w8-project-back-end-tech-gladiators) repos which I joined together into a single repo for ease of deployment.
+
+At just 8 weeks into a sixteen-week course, the project was outlined with the following criteria:
+
+## Overview
 "We want to see a full-stack application you’ve designed and built to solve a problem. We’d like this to include a front-end application (HTML, CSS, JS) that calls out to a backend application (Node.js). Your front end should send data to or fetch data from the backend to perform its function. The application should have some tests."
 
 ### Problem Statement
@@ -67,6 +71,7 @@ npm run reset-databse
 ```
 This will create all the necessary tables and some data for each resource libraries.
 
+---
 
 ## Credits
 
