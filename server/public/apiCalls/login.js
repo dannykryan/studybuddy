@@ -1,7 +1,5 @@
 const baseURL = "https://study-buddy-9en0.onrender.com";
 
-//login attempt
-//export const userName = ''
 const loginForm = document.getElementById("logInData");
 const continueBtn = document.querySelector(".popUp");
 
