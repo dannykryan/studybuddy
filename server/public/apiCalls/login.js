@@ -25,9 +25,15 @@ loginForm.addEventListener("submit", async (e) => {
     console.log("There has been an error!");
     document.getElementById("notFound").classList.toggle("notFound");
   } else {
-    localStorage.setItem("username", `${loginData.data.username}`);
+    console.log(`This is the login localStorage:`, localStorage);
     localStorage.setItem("id", `${loginData.data.id}`);
+    localStorage.setItem("fullName", `${loginData.data.name}`);
+    localStorage.setItem("email", `${loginData.data.email}`);
+    localStorage.setItem("username", `${loginData.data.username}`);
     localStorage.setItem("img", `${loginData.data.imglink}`);
+    localStorage.setItem("frontEndRating", `${loginData.data.frontendrating}`);
+    localStorage.setItem("backEndRating", `${loginData.data.backendrating}`);
+    localStorage.setItem("uiUxRating", `${loginData.data.uiuxrating}`);
     continueBtn.innerHTML = `
         <div class="continue">
         <h2>Welcome back, ${loginData.data.name.split(" ")[0]}!</h2>
@@ -57,7 +63,7 @@ function register() {
 //API request to add new user
 
 registerForm.addEventListener("submit", async (e) => {
-  // e.preventDefault()
+  e.preventDefault(); // Prevent form submission for now
   let resource = {
     name: e.target[0].value,
     email: e.target[1].value,
@@ -69,14 +75,24 @@ registerForm.addEventListener("submit", async (e) => {
   console.log(resource);
   let JSONdata = JSON.stringify(resource);
 
-  let response = await fetch(`${baseURL}/users/newuser`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSONdata, // body data type must match "Content-Type" header
-  });
+  try {
+    let response = await fetch(`${baseURL}/users/newuser`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata, // body data type must match "Content-Type" header
+    });
 
-  let data = await response.json();
-  console.log(data);
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+
+    let data = await response.json();
+    console.log(data);
+    // Handle successful response here
+  } catch (error) {
+    console.error("There was a problem with the fetch operation:", error);
+    // Handle errors here
+  }
 });

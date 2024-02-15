@@ -1,35 +1,30 @@
 const baseURL = "https://study-buddy-9en0.onrender.com";
 
-//////////getting user information from the back end using user ID
-let userid = localStorage.getItem("id");
+// Retrieve user information from localStorage
+const userInfo = {
+    id: localStorage.getItem("id"),
+    fullName: localStorage.getItem("fullName"),
+    username: localStorage.getItem("username"),
+    email: localStorage.getItem("email"),
+    img: localStorage.getItem("img"),
+    frontEndRating: localStorage.getItem("frontEndRating"),
+    backEndRating: localStorage.getItem("backEndRating"),
+    uiUxRating: localStorage.getItem("uiUxRating")
+};
 
-document.addEventListener("DOMContentLoaded", populateUserData(userid));
-
-async function populateUserData(id) {
-  console.log("hello" + id);
-  let resource = { id: id };
-  let JSONdata = JSON.stringify(resource);
-  let response = await fetch(`${baseURL}/users/user`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSONdata, // body data type must match "Content-Type" header
-  });
-  let data = await response.json();
-  console.log(data.data.username);
-  document.getElementById("user-basic-info").innerHTML = `
-    <h1 id="user-fullname">${data.data.name}</h1>
-    <p class="user-handle">${data.data.username}</p>
-    <a id="user-email" href="mailto:dannykryan@gmail.com">${data.data.email}</a>
-    `;
-}
+console.log(`User Information:`, userInfo);
 
 ///////adding styling to user image
-
 document.getElementById("userImage").innerHTML = `#profile-pic{
-    background-image: url('${localImg}');}
-    #profile-pic-large{
-        background-image: url('${localImg}');
-    }
+    background-image: url('${userInfo.img}');
+}
+#profile-pic-large{
+    background-image: url('${userInfo.img}');
+}`;
+
+// Populate user basic info in the DOM
+document.getElementById("user-basic-info").innerHTML = `
+    <h1 id="user-fullname">${userInfo.fullName}</h1>
+    <p class="user-handle">${userInfo.username}</p>
+    <a id="user-email" href="mailto:${userInfo.email}">${userInfo.email}</a>
 `;
