@@ -29,7 +29,7 @@ Based on market research, surveys, and personal experience, we designed an app t
 
 ### Dependencies
 
-StudyBuddy uses Bcrypt for password hashing, the Express router, Morgan for middleware, PG to interact with our PostgreSQL database, and UUID for unique user and resource IDs.
+StudyBuddy uses Bcrypt for password hashing, the Express router, Morgan for middleware, and PG to interact with our PostgreSQL database.
 
 ---
 
@@ -62,20 +62,20 @@ npm install
 ```
 HOST=your_host_number
 PORT=your_port_number
-DB_CONNECTION_STRING=your_database_connection_string   
+DB_CONNECTION_STRING=your_database_connection_string
 ```
 Make sure to replace `your_host_number`, `your_port_number` and `your_database_connection_string` with your actual HOST, PORT and CONNECTION STRING.
-   
+
 6. For ease of setup, we have provided some scripts to allow new users to easily set up the required database tables and seed data. simply run the following command in the console:
 ```
-npm run reset-databse  
+npm run reset-databse
 ```
 This will create all the necessary tables and some data for each resource libraries.
 
 ---
 7. Start the server by entering the following command into your terminal:
 ```
-npm run dev  
+npm run dev
 ```
 9. Start the app by visiting http://localhost:7000/login.html (7000 is the default port number unless set in your .env file) and click 'register' to register a new user.
 10. Enter all of your details including an image URL to set as your profile image and click 'submit' which will enter you as a user in the databse and return you to the login screen.
@@ -93,4 +93,4 @@ The original StudyBuddy team:
 - Jasim Chowdhury - [GitHub](https://github.com/jasimchowdhury)
 - Susan Williams - [GitHub](https://github.com/SusanWi)
 
---- 
+---
