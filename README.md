@@ -72,6 +72,15 @@ npm run reset-databse
 This will create all the necessary tables and some data for each resource libraries.
 
 ---
+7. Start the server by entering the following command into your terminal:
+```
+npm run dev  
+```
+9. Start the app by visiting http://localhost:7000/login.html (7000 is the default port number unless set in your .env file) and click 'register' to register a new user.
+10. Enter all of your details including an image URL to set as your profile image and click 'submit' which will enter you as a user in the databse and return you to the login screen.
+11. You can now login with the username and and password you provided in the previous step.
+12. Once you have logged in you can view your user information by clicking your profile image in the top right of the screen next to your name.
+13. You should be free to browse the application and add resources using the 'plus' button in the bottom right of each 'resource library' page.
 
 ## Credits
 
