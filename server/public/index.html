@@ -93,5 +93,18 @@
         <a id="log-out-btn" onclick="logOut(); window.location.href='login.html';">Log Out</a>
     </footer>
     <script src="userData.js"></script>
+
+    <!-- JavaScript redirect script -->
+    <script>
+        // Check if user data exists in localStorage
+        const userId = localStorage.getItem("id");
+        const userName = localStorage.getItem("username");
+
+        // If user data exists, do nothing (let the user stay on the page)
+        if (!userId || !userName) {
+            // Redirect to the login page if user data doesn't exist
+            window.location.href = 'login.html';
+        }
+    </script>
 </body>
 </html>
