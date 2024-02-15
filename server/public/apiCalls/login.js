@@ -1,7 +1,6 @@
 const baseURL = "https://study-buddy-9en0.onrender.com";
+import { v4 as uuidv4 } from 'uuid';
 
-//login attempt
-//export const userName = ''
 const loginForm = document.getElementById("logInData");
 const continueBtn = document.querySelector(".popUp");
 
@@ -65,6 +64,7 @@ function register() {
 registerForm.addEventListener("submit", async (e) => {
   e.preventDefault(); // Prevent form submission for now
   let resource = {
+    id: uuidv4(),
     name: e.target[0].value,
     email: e.target[1].value,
     username: e.target[2].value,
