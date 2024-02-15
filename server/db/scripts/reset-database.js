@@ -137,7 +137,7 @@ async function resetDatabase() {
     VALUES
       ('Olivia Johnson', 'Olivia.123@gmail.com', 'Livi1996', '$2b$10$eSMkuyVtfdWuLTLonkPHIe0YdOK43quCXFce49DMWlz0oyA8fXZEO', 'https://res.cloudinary.com/ddckdaelz/image/upload/v1697441490/Illustration/lost_exbnp0.jpg', 4, 3, 3),
       ('Martina', 'martina@gmail.com', 'Martina1', '$2b$10$wIdqrcM31m0PC/KIwh1lOeXuxiE/bK1AaSP6.eOtxqsjCdogkpg9O', 'https://cdn-icons-png.flaticon.com/512/2919/2919906.png', 1, 4, 2),
-      ('Danny Ryan', 'dannykryan@gmail.com', 'dannykryan', '$2b$10$azMnp/SVmuASWAgKyQMtPuUrFgjLVQ.IRFkaU6/iUF0TgtxR54Ht.', 'https://avatars.githubusercontent.com/u/111202444?v=4', 3, 2, 4);
+      ('Danny Ryan', 'dannykryan@gmail.com', 'dannykryan', '$2b$10$Dl0hcLQLw.NSBHhjP23zFe30RK0iNPXEX5xPd2LouloJ9fKY5o/pe', 'https://avatars.githubusercontent.com/u/111202444?v=4', 3, 2, 4);
     `);
 
     console.log("Database reset successful");
