@@ -35,6 +35,10 @@ header h1 {
 
 /***********Log in ************/
 
+button {
+    cursor: pointer;
+}
+
 #login main{
     margin-top: 5%;
     display: flex;
