@@ -38,7 +38,6 @@ loginForm.addEventListener("submit", async (e) => {
         <button type="button" onclick="window.location.href = 'index.html';" >Continue</button>
         </div>
         `;
-    userName = data.data.name;
   }
 });
 
