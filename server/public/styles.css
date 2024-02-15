@@ -222,8 +222,19 @@ form{
     gap: 5px;
 }
 
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #newRes {
     border-radius: 13px;
+    max-width: 500px;
+    position: fixed;
+    top: 50%; /* Adjusted from 10% */
+    left: 50%; /* Adjusted from 10% */
+    transform: translate(-50%, -50%); /* Centering trick */
 }
 
 #newRes h2 {
@@ -262,8 +273,11 @@ form input {
 }
 
 #form-cancel-button {
-    margin-top: 1.1rem;
     background-color: #666371;
+}
+
+#form-submit-button {
+    margin-top: 1.1rem;
 }
 
 #form-cancel-button:hover {
