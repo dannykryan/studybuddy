@@ -1,4 +1,7 @@
-const baseURL = "https://study-buddy-9en0.onrender.com";
+//////////////////////////////////FRONT END////////////////////////////////////////////////
+
+const PORT = 7000;
+const baseURL = `http://localhost:${PORT}`;
 
 //API call to get conent to populate front end page
 document.addEventListener("DOMContentLoaded", populate);
@@ -46,30 +49,9 @@ function addColour(id) {
   return colours[0];
 }
 //////////////////////////////////////////////////////////////////////////////////
-
 //api call to get username for adding to new resource
 let userid = localStorage.getItem("id");
-let userNameAdd = null;
 
-document.addEventListener("DOMContentLoaded", getUserId(userid));
-
-async function getUserId(id) {
-  let resource = { id: id };
-  let resourceJSON = JSON.stringify(resource);
-  let response = await fetch(`${baseURL}/users/user`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: resourceJSON, // body data type must match "Content-Type" header
-  });
-  let data = await response.json();
-  userNameAdd = data.data.username;
-}
-
-//API call to submit a new resource
-//function to submit new resources
-//default behaviour for submit is to refresh page - so resources automatically update.
 form.addEventListener("submit", async (e) => {
   //get values from Form data and save in js object
   let localUsername = localStorage.getItem("username");
@@ -81,14 +63,15 @@ form.addEventListener("submit", async (e) => {
     owner: localUsername,
   };
   //turn into JSON object
-  let resourceJSON = JSON.stringify(resource);
+  // console.log(resource);
+  let JSONdata = JSON.stringify(resource);
   //post new resource to the database
   let response = await fetch(`${baseURL}/funstuff`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: resourceJSON, // body data type must match "Content-Type" header
+    body: JSONdata, // body data type must match "Content-Type" header
   });
   //get data from the API and parse to JavaScript
   // let data = await response.json()

@@ -1,4 +1,5 @@
-const baseURL = "https://study-buddy-9en0.onrender.com";
+const PORT = 7000;
+const baseURL = `http://localhost:${PORT}`;
 
 const loginForm = document.getElementById("logInData");
 const continueBtn = document.querySelector(".popUp");

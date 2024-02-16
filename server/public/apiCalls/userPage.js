@@ -1,4 +1,5 @@
-const baseURL = "https://study-buddy-9en0.onrender.com";
+const PORT = 7000;
+const baseURL = `http://localhost:${PORT}`;
 
 // Retrieve user information from localStorage
 const userInfo = {
