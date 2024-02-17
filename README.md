@@ -14,6 +14,8 @@ The project was originally built as two separate [front-end](https://github.com/
 
 ## Overview
 
+![StudyBuddy Animation](/server/public/assets/readme/StudyBuddyGif.gif)
+
 The project was outlined with the following criteria:
 
 "We want to see a full-stack application you’ve designed and built to solve a problem. We’d like this to include a front-end application (HTML, CSS, JS) that calls out to a backend application (Node.js). Your front end should send data to or fetch data from the backend to perform its function. The application should have some tests."
