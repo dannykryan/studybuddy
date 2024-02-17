@@ -1,5 +1,9 @@
 # StudyBuddy
 
+Watch a Demo on YouTube:
+
+[![StudyBuddy Demo Video](/server/public/assets/readme/studybuddy-thumb.png)](https://youtu.be/zV7LkxL58pU)
+
 Try Now: [StudyBuddy App](https://study-buddy-9en0.onrender.com/)
 
 ## Introduction
