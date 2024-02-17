@@ -1,6 +1,6 @@
 # StudyBuddy
 
-Watch a Demo on YouTube:
+Watch the Youtube video below for a walkthrough of the design process and a full demo of the app:
 
 [![StudyBuddy Demo Video](/server/public/assets/readme/studybuddy-thumb.png)](https://youtu.be/zV7LkxL58pU)
 
@@ -8,7 +8,7 @@ Try Now: [StudyBuddy App](https://study-buddy-9en0.onrender.com/)
 
 ## Introduction
 
-StudyBuddy was created within one week as a half-term project at the School of Code software development bootcamp by a team of five junior software developers. 
+StudyBuddy was created within one week as a half-term project at the School of Code software development bootcamp by a team of five junior software developers.
 
 The project was originally built as two separate [front-end](https://github.com/SchoolOfCode/bc15-w8-project-front-end-tech-gladiators) and [back-end](https://github.com/SchoolOfCode/bc15-w8-project-back-end-tech-gladiators) repos which I joined together into a single repo for ease of deployment.
 
@@ -19,6 +19,7 @@ The project was outlined with the following criteria:
 "We want to see a full-stack application you’ve designed and built to solve a problem. We’d like this to include a front-end application (HTML, CSS, JS) that calls out to a backend application (Node.js). Your front end should send data to or fetch data from the backend to perform its function. The application should have some tests."
 
 ### Problem Statement
+
 With just one day for research and ideation, we surveyed and interviewed our fellow boot campers to discover what we could design to assist them on their boot camp journey. Our research helped us refine our problem statement:
 
 "Improve Isolation of Boot campers and offer learning peer support and accountability."
@@ -55,32 +56,43 @@ To work with StudyBuddy, follow these steps:
 
 1. Start a new project in your IDE.
 2. Clone down the repo:
+
 ```
 git clone git@github.com:dannykryan/studybuddy.git
 ```
+
 3. Install the dependencies:
+
 ```
 npm install
 ```
+
 4. Create a new `.env` file and add your HOST, PORT and DB_CONNECTION_STRING and Key:
+
 ```
 HOST=your_host_number
 PORT=your_port_number
 DB_CONNECTION_STRING=your_database_connection_string
 ```
+
 Make sure to replace `your_host_number`, `your_port_number` and `your_database_connection_string` with your actual HOST, PORT and CONNECTION STRING.
 
 6. For ease of setup, we have provided some scripts to allow new users to easily set up the required database tables and seed data. simply run the following command in the console:
+
 ```
 npm run reset-databse
 ```
+
 This will create all the necessary tables and some data for each resource libraries.
 
 ---
+
 7. Start the server by entering the following command into your terminal:
+
 ```
 npm run dev
 ```
+
 9. Start the app by visiting http://localhost:7000/login.html (7000 is the default port number unless set in your .env file) and click 'register' to register a new user.
 10. Enter all of your details including an image URL to set as your profile image and click 'submit' which will enter you as a user in the databse and return you to the login screen.
 11. You can now login with the username and and password you provided in the previous step.
