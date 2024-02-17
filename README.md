@@ -10,7 +10,7 @@ Try Now: [StudyBuddy App](https://study-buddy-9en0.onrender.com/)
 
 StudyBuddy was created within one week as a half-term project at the School of Code software development bootcamp by a team of five junior software developers.
 
-The project was originally built as two separate [front-end](https://github.com/SchoolOfCode/bc15-w8-project-front-end-tech-gladiators) and [back-end](https://github.com/SchoolOfCode/bc15-w8-project-back-end-tech-gladiators) repos which I joined together into a single repo for ease of deployment.
+The project was originally built as two separate [front-end](https://github.com/SchoolOfCode/bc15-w8-project-front-end-tech-gladiators) and [back-end](https://github.com/SchoolOfCode/bc15-w8-project-back-end-tech-gladiators) repos which I joined together into a single repo for ease of deployment. I have also fixed a number of bugs that were present in the application since completing the School of Code bootcamp.
 
 ## Overview
 
@@ -39,10 +39,6 @@ Based on market research, surveys, and personal experience, we designed an app t
 StudyBuddy uses Bcrypt for password hashing, the Express router, Morgan for middleware, and PG to interact with our PostgreSQL database.
 
 ---
-
-## Overview
-
-StudyBuddy is an app that allows users to share resources based on various topics related to web development and programming in a 'Resource Library' under different topic headings like 'back-end', 'front-end UI/UX', and more. On the home page, users can also find links to several 'chat rooms' where users can join to discuss topics with their peers over Google Meet. Each user has an individual user account, and their name and information are tracked with every shared resource.
 
 ## Features
 
